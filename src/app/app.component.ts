@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ToDO';
+  tasks = [];
+  currentTask = "";
+
+    newTask(){
+      const currentTask = this.currentTask.trim();
+
+      if(currentTask !== ""){
+        const task = {
+        inputTarea: this.currentTask
+      }
+      this.tasks.push(task)
+      }
+    }
 }
+
+
