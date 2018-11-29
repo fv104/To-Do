@@ -18,7 +18,9 @@ export class AppComponent {
       }
       this.tasks.push(task)
       }
+
     }
+
 }
 
 
